@@ -1,0 +1,27 @@
+import java.util.Map;
+import java.util.Scanner;
+import java.util.TreeMap;
+
+public class collectionsLab {
+
+	private static Scanner scnr;
+	private static Map<String, Double> items = new TreeMap<>();
+	
+	public static void main(String[] args) {
+		scnr = new Scanner(System.in);
+		fillItemsMap();
+		
+		
+	}	
+	private static void fillItemsMap() {
+		items.put("apple", 0.99);
+		items.put("banana", 0.59);
+		items.put("cauliflower", 1.59);
+		items.put("dragonfruit", 2.19);
+		items.put("Elderberry", 1.79);
+		items.put("figs", 2.09);
+		items.put("grapefruit", 1.99);
+		items.put("honeydew", 3.49);
+	}
+
+}
